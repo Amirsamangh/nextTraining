@@ -1,3 +1,8 @@
+export const metadata = {
+    title: 'Contact',
+    description: 'order make website',
+  }
+
 const Contact = () => {
     return (
         <section className="contact section-padding" id="section_5">
@@ -51,13 +56,13 @@ const Contact = () => {
                             <strong className="site-footer-title d-block mb-3">About</strong>
 
                             <p className="mb-2">
-                                Amirsaman is a professional web developer. Feel free to get in touch with me.
+                                Amirsaman is a web developer. Feel free to get in touch with me.
                             </p>
 
                             <strong className="site-footer-title d-block mt-4 mb-3">Email</strong>
 
                             <p>
-                                <a href="gharechahi72@gmail.com">
+                                <a href="mailto:gharechahi72@gmail.com">
                                     gharechahi72@gmail.com
                                 </a>
                             </p>
@@ -65,7 +70,7 @@ const Contact = () => {
                             <strong className="site-footer-title d-block mt-4 mb-3">Call</strong>
 
                             <p className="mb-0">
-                                <a href="tel: 917-556-3670">
+                                <a href="tel:+989175563670">
                                     917-556-3670
                                 </a>
                             </p>
@@ -79,7 +84,7 @@ const Contact = () => {
                                     <div className="form-floating">
                                         <input type="text" name="name" id="name" className="form-control" placeholder="Name" required="" />
 
-                                        <label for="floatingInput">Name</label>
+                                        <label htmlFor="floatingInput">Name</label>
                                     </div>
                                 </div>
 
@@ -87,7 +92,7 @@ const Contact = () => {
                                     <div className="form-floating">
                                         <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" className="form-control" placeholder="Email address" required="" />
 
-                                        <label for="floatingInput">Email address</label>
+                                        <label htmlFor="floatingInput">Email address</label>
                                     </div>
                                 </div>
 
@@ -95,7 +100,7 @@ const Contact = () => {
                                     <div className="form-check form-check-inline">
                                         <input name="website" type="checkbox" className="form-check-input" id="inlineCheckbox1" value="1" />
 
-                                        <label className="form-check-label" for="inlineCheckbox1">
+                                        <label className="form-check-label" htmlFor="inlineCheckbox1">
                                             <i className="bi-globe form-check-icon"></i>
                                             <span className="form-check-label-text">Websites</span>
                                         </label>
@@ -106,7 +111,7 @@ const Contact = () => {
                                     <div className="form-check form-check-inline">
                                         <input name="branding" type="checkbox" className="form-check-input" id="inlineCheckbox2" value="1" />
 
-                                        <label className="form-check-label" for="inlineCheckbox2">
+                                        <label className="form-check-label" htmlFor="inlineCheckbox2">
                                             <i className="bi-lightbulb form-check-icon"></i>
                                             <span className="form-check-label-text">Branding</span>
                                         </label>
@@ -117,7 +122,7 @@ const Contact = () => {
                                     <div className="form-check form-check-inline">
                                         <input name="ecommerce" type="checkbox" className="form-check-input" id="inlineCheckbox3" value="1" />
 
-                                        <label className="form-check-label" for="inlineCheckbox3">
+                                        <label className="form-check-label" htmlFor="inlineCheckbox3">
                                             <i className="bi-phone form-check-icon"></i>
                                             <span className="form-check-label-text">Ecommerce</span>
                                         </label>
@@ -128,7 +133,7 @@ const Contact = () => {
                                     <div className="form-check form-check-inline me-0">
                                         <input name="seo" type="checkbox" className="form-check-input" id="inlineCheckbox4" value="1" />
 
-                                        <label className="form-check-label" for="inlineCheckbox4">
+                                        <label className="form-check-label" htmlFor="inlineCheckbox4">
                                             <i className="bi-google form-check-icon"></i>
                                             <span className="form-check-label-text">SEO</span>
                                         </label>
@@ -139,7 +144,7 @@ const Contact = () => {
                                     <div className="form-floating">
                                         <textarea className="form-control" id="message" name="message" placeholder="Tell me about the project"></textarea>
 
-                                        <label for="floatingTextarea">Tell me about the project</label>
+                                        <label htmlFor="floatingTextarea">Tell me about the project</label>
                                     </div>
                                 </div>
 

@@ -1,3 +1,8 @@
+export const metadata = {
+    title: 'Services',
+    description: 'HTML CSS Bootstrap Tailwind Javascript Typescript React.js Next.js',
+  }
+
 const Services = () => {
     return (
         <section className="services section-padding" id="section_3">

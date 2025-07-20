@@ -46,6 +46,21 @@ body {
   font-family: var(--body-font-family);
 }
 
+@font-face {
+  font-family: 'Yekan';
+  src: url('../fonts/Yekan.ttf');
+
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Yekan', Arial, Helvetica, sans-serif;
+  word-spacing: 1px !important;
+  letter-spacing: 0.001px !important;
+  /* direction: rtl; */
+  /* text-align: right; */
+}
+
 
 /*---------------------------------------
   TYPOGRAPHY               
@@ -251,6 +266,15 @@ strong {
   font-weight: var(--font-weight-bold);
 }
 
+.btn {
+  background: var(--secondary-color);
+  border-radius: var(--border-radius-large);
+  border: 2px #f9f9f9;
+  color: var(--white-color);
+  font-weight: var(--font-weight-bold);
+  padding: 12px 24px;
+}
+
 .navbar .custom-btn {
   background: transparent;
   border-width: 2px;
@@ -316,7 +340,7 @@ strong {
 
 .is-sticky,
 .is-sticky .navbar .container {
-  background: var(--white-color);
+  /* background: var(--white-color); */
   box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
 }
 
@@ -354,10 +378,15 @@ strong {
   border-radius: var(--border-radius-small);
   padding: 10px 25px;
 }
+@font-face {
+  font-family: "northBlue";
+  src: url('../fonts/Northblue.ttf');
+}
 
 .navbar-brand {
   font-size: var(--h4-font-size);
   font-weight: var(--font-weight-bold);
+  font-family: "northBlue", system-ui;
 }
 
 .navbar-brand,
@@ -480,11 +509,12 @@ strong {
   overflow: hidden;
   padding-top: 330px;
   padding-bottom: 330px;
+  height: 20vh;
 }
 
 @media screen and (min-width: 991px) {
   .hero {
-    height: 60vh;
+    height: 20vh;
   }
 }
 
@@ -529,7 +559,7 @@ strong {
   position: absolute;
   z-index: 22;
   top: 0;
-  width: 100%;
+  max-width: 320px;
   min-width: 550px;
 }
 
@@ -561,11 +591,11 @@ strong {
 }
 
 .profile-small-title {
-  border-right: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
   color: var(--secondary-color);
   font-weight: var(--font-weight-bold);
   min-width: 140px;
-  margin-right: 10px;
+  margin-left: 10px;
   padding: 13px 30px;
   display: inline-block;
 }
@@ -1044,11 +1074,11 @@ strong {
   .custom-btn,
   .navbar .custom-btn {
     font-size: var(--copyright-text-font-size);
-    padding: 8px 16px;
+    padding: 8px 26px;
   }
 
   .navbar .container {
-    background: var(--white-color);
+    background: var(--secondary-color);
   }
 
   .navbar-brand,
@@ -1066,7 +1096,8 @@ strong {
 
   .navbar .custom-btn {
     border-color: var(--secondary-color);
-    color: var(--secondary-color);
+    border: var(--secondary-color);
+    color: var(--white-color);
   }
 
   .navbar-toggler .navbar-toggler-icon,
@@ -1204,6 +1235,50 @@ strong {
   z-index: 9999;
 }
 
+.dir_rtl {
+  direction: rtl !important;
+}
 .dir_ltr {
   direction: ltr !important;
+}
+
+.img_hero {
+  width: 100%;
+  height: 100%;
+  max-width: 320px;
+  max-height: 320px;
+  z-index: 23;
+  position: absolute;
+  top: 40px;
+  overflow: hidden;
+}
+.text_3xl {
+  font-size: 34px !important;
+}
+
+.text_md {
+  font-size: 16px !important;
+}
+
+.main_btn {
+  background-color: #535da1;
+  color: #f9f9f9 !important;
+  border-radius: var(--border-radius-large);
+  border: 2px #f9f9f9;
+  font-weight: var(--font-weight-bold);
+  padding: 12px 24px;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: #f9f9f9;
+    color: #000000 !important;
+
+  }
+}
+
+.scale_2 {
+  transform: scale(2);
+  &:hover {
+    transform: scale(2.5) !important;
+  }
 }

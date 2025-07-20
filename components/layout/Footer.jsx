@@ -8,9 +8,8 @@ const Footer = () => {
                     <div className="col-lg-12 col-12">
                         <div className="copyright-text-wrap">
                             <p className="mb-0">
-                                <span className="copyright-text">Copyright © 2025 <a href="#">First Portfolio</a> Company. All rights reserved.</span>
-                                Design:
-                                <a rel="sponsored" href="https://templatemo.com" target="_blank">Amirsaman Gharechahi</a>
+                                <span className="copyright-text">Copyright © 2025 Amirsaman Gharechahi. All rights reserved.</span>
+                                Design: Amirsaman Gharechahi
                             </p>
                         </div>
                     </div>

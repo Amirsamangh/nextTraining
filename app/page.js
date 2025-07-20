@@ -9,19 +9,20 @@ export default function Home() {
           <div className="col-lg-7 col-12">
             <div className="hero-text">
               <div className="hero-title-wrap d-flex align-items-center mb-4">
-                <img src="/assets/images/me1.jpg" className="avatar-image avatar-image-large img-fluid" alt="" />
+                <img src="/assets/images/me2.jpg" className="avatar-image avatar-image-large img-fluid" alt="" />
 
-                <h1 className="hero-title ms-3 mb-0">Hello friend!</h1>
+                <h1 className="hero-title ms-3 mb-0">سلام!</h1>
               </div>
 
-              <h2 className="mb-4">I’m available for freelance work.</h2>
-              <p className="mb-4"><Link className="custom-btn btn custom-link" href="/about">Let's begin</Link></p>
+              <h2 className="mb-4 dir_rtl text_3xl">من، امیرسامان، یه برنامه نویس فرانت اند هستم. به وبسایت من خوش اومدی</h2>
+              <p className="mb-4"><Link className=" btn main_btn " href="/about">برو که بریم</Link></p>
             </div>
           </div>
 
           <div className="col-lg-5 col-12 position-relative">
-            <div className="hero-image-wrap"></div>
-            <img src="/assets/images/portrait-happy-excited-man-holding-laptop-computer.png" className="hero-image img-fluid" alt="" />
+            <div className="hero-image-wrap overflow-hidden position-relative d-flex justify-content-center align-items-center">
+              <img src="/assets/images/me3.png" className=" img-fluid img_hero" alt="" />
+            </div>
           </div>
 
         </div>

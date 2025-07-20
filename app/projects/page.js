@@ -1,3 +1,8 @@
+export const metadata = {
+    title: 'Projects',
+    description: 'FrontEnd Projects',
+  }
+
 const Projects = () => {
     return (
         <section className="projects section-padding" id="section_4">
