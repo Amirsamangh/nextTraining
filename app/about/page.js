@@ -1,4 +1,8 @@
+
+import Skills from '@/components/about/skills';
 import React from 'react';
+import IntroTable from '@/components/about/IntroTable';
+import SpecTable from '@/components/about/SpecTable';
 
 export const metadata = {
     title: 'About',
@@ -21,18 +25,16 @@ const About = () => {
 
                                 <div className="section-title-wrap d-flex justify-content-end align-items-center mb-4 d-flex">
                                     <h2 className="text-white mx-4 mb-0">درباره من</h2>
-                                    <img src="/assets/images/me1.jpg" className="avatar-image img-fluid" alt="" />
+                                    <img src="/assets/images/me4.jpg" className="avatar-image img-fluid" alt="" />
                                 </div>
 
-                                <h3 className="pt-2 mb-3 dir_rtl">کمی توضیح در مورد من</h3>
+                                <h3 className="pt-2 mb-3 dir_rtl">چه چیز هایی بلدم؟</h3>
 
-                                <p className='dir_rtl text_md'>من یه برنامه نویس وب آشنا با بسیاری از تکنولوژی های فرانت اند از جمله HTML, CSS, Bootstrap, Tailwind, Javascript, Typescript, react.js, Next.js هستم واین وبسایت رو با Next.js نوشتم <br />
-                                <hr />
-                                مهارت های دیگر : <br /> <br />
-                                 <span className='dir_rtl'>
-                                 webpack, vite, axios, api, redux, context api, shadcn, git, github, responsive design
-                                 </span>
-                                </p>
+                                <div className='dir_rtl'>
+                                    <p className='text_md'>
+                                    من یه برنامه نویس وب آشنا با بسیاری از تکنولوژی های فرانت اند از جمله HTML, CSS, Bootstrap, Tailwind, Javascript, Typescript, react.js, Next.js هستم واین وبسایت رو با Next.js نوشتم 
+                                    </p>
+                                </div>
                             </div>
                         </div>
 
@@ -50,25 +52,22 @@ const About = () => {
                                 </div>
 
                                 <div className="profile-body ">
-                                    <p className='text_md'>
-                                        <span className="profile-small-title">نام</span>
-                                        <span>امیرسامان قره چاهی</span>
-                                    </p>
-
-                                    <p className='text_md'>
-                                        <span className="profile-small-title">تاریخ تولد</span>
-                                        <span>23 آبان 1375</span>
-                                    </p>
-
-                                    <p className='text_md'>
-                                        <span className="profile-small-title">شماره تماس</span>
-                                        <span><a href="tel: +98917556670">09175563670</a></span>
-                                    </p>
-
-                                    <p className='text_md'>
-                                        <span className="profile-small-title">ایمیل</span>
-                                        <span><a href="mailto:ghrechahi72@gmail.com">ghrechahi72@gmail.com</a></span>
-                                    </p>
+                                    <IntroTable
+                                        title='نام'
+                                        description='امیرسامان قره چاهی'
+                                    />
+                                    <IntroTable
+                                        title='تاریخ تولد'
+                                        description='23 آبان 1375'
+                                    />
+                                    <IntroTable
+                                        title='شماره تماس'
+                                        description={<a href="tel: +98917556670">09175563670</a>}
+                                    />
+                                    <IntroTable
+                                        title='ایمیل'
+                                        description={<a href="mailto:ghrechahi72@gmail.com">ghrechahi72@gmail.com</a>}
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -76,29 +75,22 @@ const About = () => {
                         <div className="col-lg-6 col-12 mt-5 mt-lg-0">
                             <div className="about-thumb">
                                 <div className="row">
-                                    <div className="col-lg-6 col-6 featured-border-bottom py-2">
-                                        <strong className="featured-numbers">2+</strong>
-
-                                        <p className="featured-text text_md">سالهای تحربه</p>
-                                    </div>
-
-                                    {/* <div className="col-lg-6 col-6 featured-border-start featured-border-bottom ps-5 py-2">
-                                        <strong className="featured-numbers">0</strong>
-
-                                        <p className="featured-text">Happy Customers</p>
-                                    </div> */}
-
-                                    <div className="col-lg-6 col-6 pt-4">
-                                        <strong className="featured-numbers">5</strong>
-
-                                        <p className="featured-text text_md">پروژه های انجام شده</p>
-                                    </div>
-
-                                    {/* <div className="col-lg-6 col-6 featured-border-start ps-5 pt-4">
-                                        <strong className="featured-numbers">0</strong>
-
-                                        <p className="featured-text">Digital Awards</p>
-                                    </div> */}
+                                    <SpecTable
+                                        title={'سالهای تحربه'}
+                                        description={'2+'}
+                                    />
+                                    <SpecTable
+                                        title={'پروژه های انجام شده'}
+                                        description={'5'}
+                                    />
+                                    {/* <SpecTable
+                                        title={'مشتری های راضی'}
+                                        description={'0'}
+                                    />
+                                    <SpecTable
+                                        title={'جوایز'}
+                                        description={'0'}
+                                    /> */}
                                 </div>
                             </div>
                         </div>
@@ -112,49 +104,21 @@ const About = () => {
                     <div className="col-lg-12 col-12">
                         <h3 className="text-center mb-5 text_3xl">تکنولوژی ها و مهارت ها</h3>
                     </div>
-
-                    <div className="col-lg-2 col-4 ms-auto clients-item-height cursor-pointer d-flex align-items-center">
-                        <img src="/assets/images/logos/html.png" className="clients-image img-fluid" alt=""/>
-                    </div>
-
-                    <div className="col-lg-2 col-4 clients-item-height cursor-pointer d-flex align-items-center">
-                        <img src="/assets/images/logos/css.png" className="clients-image img-fluid" alt=""/>
-                    </div>
-
-                    <div className="col-lg-2 col-4 clients-item-height cursor-pointer d-flex align-items-center">
-                        <img src="/assets/images/logos/BS.png" className="clients-image img-fluid" alt=""/>
-                    </div>
-
-                    <div className="col-lg-2 col-4 clients-item-height cursor-pointer d-flex align-items-center">
-                        <img src="/assets/images/logos/js.png" className="clients-image img-fluid" alt=""/>
-                    </div>
-
-                    <div className="col-lg-2 col-4 me-auto clients-item-height cursor-pointer d-flex align-items-center">
-                        <img src="/assets/images/logos/ts.png" className="clients-image img-fluid" alt=""/>
-                    </div>
+                    <Skills image='html.png' />
+                    <Skills image='css.png' />
+                    <Skills image='BS.png' />
+                    <Skills image='tailwind.png' />
+                    <Skills image='js.png' />
+                    <Skills image='ts.png' />
+                    <Skills image='react.png' />
+                    <Skills image='next.png' className={'scale_2'} />
+                    <Skills image='redux.png' />
+                    <Skills image='sass.png' />
+                    <Skills image='github.png' />
+                    <Skills image='vite.svg' />
                 </div>
-                <br />
-                <div className="row">
-                    <div className="col-lg-2 col-4 ms-auto clients-item-height cursor-pointer d-flex align-items-center">
-                        <img src="/assets/images/logos/react.png" className="clients-image img-fluid" alt=""/>
-                    </div>
-
-                    <div className="col-lg-2 col-4 clients-item-height cursor-pointer d-flex align-items-center">
-                        <img src="/assets/images/logos/redux.png" className="clients-image img-fluid" alt=""/>
-                    </div>
-
-                    <div className="col-lg-2 col-4 clients-item-height cursor-pointer d-flex align-items-center">
-                        <img src="/assets/images/logos/sass.png" className="clients-image img-fluid" alt=""/>
-                    </div>
-
-                    <div className="col-lg-2 col-4 clients-item-height cursor-pointer d-flex align-items-center">
-                        <img src="/assets/images/logos/next.png" className="clients-image img-fluid scale_2" alt=""/>
-                    </div>
-
-                    <div className="col-lg-2 col-4 me-auto clients-item-height cursor-pointer d-flex align-items-center">
-                        <img src="/assets/images/logos/tailwind.png" className="clients-image img-fluid" alt=""/>
-                    </div>
-                </div>
+                {/* <div className="row">
+                </div> */}
             </div>
         </section>
         </>

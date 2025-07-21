@@ -1,0 +1,34 @@
+.waveContainer {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+  }
+  
+  .waveGroup {
+    transform: translateY(0);
+  }
+  
+  .wave {
+    animation: floatWave 5s ease-in-out infinite;
+  }
+  
+  .wave1 {
+    animation-delay: 0s;
+  }
+  
+  .wave2 {
+    animation-delay: 2.5s;
+  }
+  
+  @keyframes floatWave {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(15px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }

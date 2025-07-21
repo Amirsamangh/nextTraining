@@ -10,9 +10,11 @@ https://templatemo.com/tm-578-first-portfolio
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
+@import "tailwindcss";
+
 :root {
   --white-color: #ffffff;
-  --primary-color: #535da1;
+  --primary-color: #115da1;
   --secondary-color: #53a890;
   --section-bg-color: #f9f9f9;
   --dark-color: #000000;
@@ -290,12 +292,13 @@ strong {
   color: var(--secondary-color);
 }
 
-.custom-btn {
-  background: var(--secondary-color);
-  border-radius: var(--border-radius-large);
+.error_page .custom-btn {
+  background: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--white-color);
   color: var(--white-color);
-  font-weight: var(--font-weight-bold);
-  padding: 12px 24px;
+  padding: 8px 22px;
 }
 
 .custom-btn:hover {
@@ -378,6 +381,7 @@ strong {
   border-radius: var(--border-radius-small);
   padding: 10px 25px;
 }
+
 @font-face {
   font-family: "northBlue";
   src: url('../fonts/Northblue.ttf');
@@ -507,8 +511,8 @@ strong {
   background: var(--secondary-color);
   position: relative;
   overflow: hidden;
-  padding-top: 330px;
-  padding-bottom: 330px;
+  padding-top: 250px;
+  padding-bottom: 120px;
   height: 20vh;
 }
 
@@ -542,7 +546,7 @@ strong {
 }
 
 .hero-image-wrap {
-  background: var(--white-color);
+  /* background: var(--white-color); */
   border-radius: 100%;
   width: 350px;
   height: 350px;
@@ -561,6 +565,60 @@ strong {
   top: 0;
   max-width: 320px;
   min-width: 550px;
+}
+@keyframes floatWave {
+  0% {
+    transform: translateY(25px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(25px);
+  }
+}
+@keyframes floatWave2 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes floatWave3 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.hero_logo_1 {
+  animation: floatWave 4s alternate infinite;
+  width: 50%;
+  position: relative;
+  top: -150px;
+  right: -100px;
+}
+.hero_logo_2 {
+  animation: floatWave2 4s ease-in-out infinite;
+  width: 30%;
+  position: relative;
+  top: 70px;
+  right: 150px;
+}
+.hero_logo_3 {
+  animation: floatWave3 4s ease-in-out infinite;
+  position: relative;
+  top: -230px;
+  right: 490px;
 }
 
 .hero svg {
@@ -1081,10 +1139,10 @@ strong {
     background: var(--secondary-color);
   }
 
-  .navbar-brand,
+  /* .navbar-brand,
   .navbar-brand:hover {
     color: var(--dark-color);
-  }
+  } */
 
   .navbar-icon {
     background: var(--secondary-color);
@@ -1095,6 +1153,12 @@ strong {
   }
 
   .navbar .custom-btn {
+    border-color: var(--secondary-color);
+    border: var(--secondary-color);
+    color: var(--white-color);
+  }
+
+  .error_page .custom-btn {
     border-color: var(--secondary-color);
     border: var(--secondary-color);
     color: var(--white-color);
@@ -1111,7 +1175,7 @@ strong {
   }
 
   .navbar-nav .nav-link {
-    color: var(--p-color);
+    color: var(--white-color);
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -1223,7 +1287,48 @@ strong {
   }
 }
 
-/*  */
+/* svg */
+/* .wave {
+  animation: moveWave 8s linear infinite;
+}
+@keyframes moveWave {
+  0% {
+      transform: translateY(0px);
+  }
+
+  15% {
+      transform: translateY(-15px);
+  }
+
+  100% {
+      transform: translateY(0px);
+  }
+}
+
+.wave-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 200px;
+}
+
+.wave-group {
+  transform: translateY(0);
+}
+
+.wave {
+  animation: floatWave 5s ease-in-out infinite;
+}
+
+.wave1 {
+  animation-delay: 0s;
+}
+
+.wave2 {
+  animation-delay: 2.5s;
+} */
+
+/* */
 
 @import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -1238,6 +1343,7 @@ strong {
 .dir_rtl {
   direction: rtl !important;
 }
+
 .dir_ltr {
   direction: ltr !important;
 }
@@ -1245,15 +1351,16 @@ strong {
 .img_hero {
   width: 100%;
   height: 100%;
-  max-width: 320px;
-  max-height: 320px;
+  max-width: 620px;
+  max-height: 620px;
   z-index: 23;
   position: absolute;
   top: 40px;
   overflow: hidden;
 }
+
 .text_3xl {
-  font-size: 34px !important;
+  font-size: 30px !important;
 }
 
 .text_md {
@@ -1261,7 +1368,7 @@ strong {
 }
 
 .main_btn {
-  background-color: #535da1;
+  background-color: var(--secondary-color);
   color: #f9f9f9 !important;
   border-radius: var(--border-radius-large);
   border: 2px #f9f9f9;
@@ -1278,7 +1385,41 @@ strong {
 
 .scale_2 {
   transform: scale(2);
+
   &:hover {
     transform: scale(2.5) !important;
+  }
+}
+
+.circle-loader {
+  width: 50px;
+  height: 50px;
+  border: 4px solid transparent;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite, pulse 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+    border-width: 4px;
+  }
+
+  50% {
+    transform: scale(1.2);
+    border-width: 2px;
   }
 }
