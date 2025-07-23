@@ -17,7 +17,7 @@ const About = () => {
                     <div className="row">
 
                         <div className="col-lg-6 col-12">
-                            <img src="/assets/images/couple-working-from-home-together-sofa.jpg" className="about-image img-fluid" alt="" />
+                            <img src="/assets/images/me_wide3.jpg" className="about-image img-fluid h-75" alt="" />
                         </div>
 
                         <div className="col-lg-6 col-12 mt-5 mt-lg-0">
@@ -25,7 +25,7 @@ const About = () => {
 
                                 <div className="section-title-wrap d-flex justify-content-end align-items-center mb-4 d-flex">
                                     <h2 className="text-white mx-4 mb-0">درباره من</h2>
-                                    <img src="/assets/images/me4.jpg" className="avatar-image img-fluid" alt="" />
+                                    <img src="/assets/images/me2.jpg" className="avatar-image img-fluid" alt="" />
                                 </div>
 
                                 <h3 className="pt-2 mb-3 dir_rtl">چه چیز هایی بلدم؟</h3>

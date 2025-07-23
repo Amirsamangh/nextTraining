@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { FaGithub } from "react-icons/fa";
 
 const Navbar = () => {
 
@@ -23,7 +24,9 @@ const Navbar = () => {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <span>
-                        <Link href="/" className="navbar-brand mx-auto mx-lg-0">Amirsaman</Link>
+                        <Link href="/" className="navbar-brand mx-auto mx-lg-0">
+                            <img src=".\assets\images\logos\favicon1.png" alt="" className="logo top_3" />
+                        </Link>
                     </span>
 
                     {/* <div className="d-none align-items-center d-lg-flex">
@@ -56,10 +59,11 @@ const Navbar = () => {
                             </li>
                         </ul>
 
-                        <div className="d-lg-flex align-items-center justify-content-center d-none ms-auto">
-                            <i className=" bi-telephone-plus navbar-icon me-3"></i>
-                            <a className="custom-btn btn !text-red-800" href="tel: +989175563670">
-                                0917-556-3670
+                        <div className="d-none d-lg-flex align-items-center justify-content-center ms-auto">
+                            {/* <i className=" bi-telephone-plus navbar-icon me-3"></i> */}
+                            <a className="custom-btn btn !text-red-800 d-flex justify-content-between align-items-center" href="https://github.com/Amirsamangh" target="_blank">
+                                <FaGithub className="navbar-icon me-3" />
+                                <span className="top_1">Github</span>
                             </a>
                         </div>
                     </div>
