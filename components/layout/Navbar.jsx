@@ -15,7 +15,7 @@ const Navbar = () => {
                 </div>
             </section> */}
 
-            <nav className="navbar navbar-expand-lg navbar_bg mt-2 rounded py-0 mx-4 position-fixed top-0 z_index_max">
+            <nav className={`navbar navbar-expand-lg navbar_bg mt-2 rounded py-0 mx-4 position-fixed top-0 z_index_max ${pathname == '/' ? 'bg_transparent' : ''}`}>
                 <div className="container">
 
 

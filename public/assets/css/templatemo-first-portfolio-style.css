@@ -10,7 +10,6 @@ https://templatemo.com/tm-578-first-portfolio
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
-@import "tailwindcss";
 
 :root {
   --white-color: #ffffff;
@@ -367,6 +366,7 @@ strong {
 }
 
 .navbar {
+  transition: none !important;
   background: transparent;
   position: absolute;
   z-index: 9;
@@ -566,35 +566,44 @@ strong {
   max-width: 320px;
   min-width: 550px;
 }
+
 @keyframes floatWave {
   0% {
     transform: translateY(25px);
   }
+
   50% {
     transform: translateY(0px);
   }
+
   100% {
     transform: translateY(25px);
   }
 }
+
 @keyframes floatWave2 {
   0% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-25px);
   }
+
   100% {
     transform: translateY(0px);
   }
 }
+
 @keyframes floatWave3 {
   0% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(25px);
   }
+
   100% {
     transform: translateY(0px);
   }
@@ -607,6 +616,7 @@ strong {
   top: 20px;
   right: -150px;
 }
+
 .hero_logo_2 {
   animation: floatWave2 4s ease-in-out infinite;
   width: 30%;
@@ -614,6 +624,7 @@ strong {
   top: -70px;
   right: 180px;
 }
+
 .hero_logo_3 {
   animation: floatWave3 4s ease-in-out infinite;
   position: relative;
@@ -1441,10 +1452,12 @@ strong {
   position: relative;
   top: 1px;
 }
+
 .top_2 {
   position: relative;
   top: 2px;
 }
+
 .top_3 {
   position: relative;
   top: 3px;
@@ -1453,4 +1466,8 @@ strong {
 .logo {
   height: 70px;
   width: 70px;
+}
+
+.bg_transparent {
+  background-color: #00000000 !important;
 }
